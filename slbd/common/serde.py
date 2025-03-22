@@ -1,8 +1,8 @@
 from typing import Dict, List, Union
 
-from slwr.proto import server_model_pb2
-from slwr.proto.server_model_pb2 import ControlCode as GrpcControlCode
-from slwr.common.typing import ControlCode
+from slbd.proto import server_model_pb2
+from slbd.proto.server_model_pb2 import ControlCode as GrpcControlCode
+from slbd.common.typing import ControlCode
 
 
 def control_code_to_proto(in_code: ControlCode) -> GrpcControlCode:

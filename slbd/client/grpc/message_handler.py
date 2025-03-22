@@ -18,9 +18,9 @@ from flwr.common.recordset_compat import (
     recordset_to_getpropertiesins,
 )
 
-from slwr.common.constants import CLIENT_ID_CONFIG_KEY
-from slwr.proto.server_model_pb2_grpc import ServerModelStub
-from slwr.server.server_model.proxy.grpc_server_model_proxy import GrpcServerModelProxy
+from slbd.common.constants import CLIENT_ID_CONFIG_KEY
+from slbd.proto.server_model_pb2_grpc import ServerModelStub
+from slbd.server.server_model.proxy.grpc_server_model_proxy import GrpcServerModelProxy
 
 
 def handle_legacy_message_from_msgtype(

@@ -1,12 +1,12 @@
 from typing import AsyncIterable
 import asyncio
 
-from slwr.proto import server_model_pb2_grpc
-from slwr.proto import server_model_pb2
-from slwr.server.server_model.manager import ServerModelManager
-from slwr.server.server_model.utils import ClientRequestGroup
-from slwr.common import BatchData, ControlCode
-from slwr.common.serde import (
+from slbd.proto import server_model_pb2_grpc
+from slbd.proto import server_model_pb2
+from slbd.server.server_model.manager import ServerModelManager
+from slbd.server.server_model.utils import ClientRequestGroup
+from slbd.common import BatchData, ControlCode
+from slbd.common.serde import (
     control_code_from_proto,
     control_code_to_proto,
     from_grpc_format,

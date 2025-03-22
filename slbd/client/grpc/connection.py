@@ -37,7 +37,7 @@ from flwr.proto.transport_pb2 import (  # pylint: disable=E0611
 from flwr.proto.transport_pb2_grpc import FlowerServiceStub  # pylint: disable=E0611
 from flwr.common.constant import MessageType, MessageTypeLegacy
 
-from slwr.proto.server_model_pb2_grpc import ServerModelStub
+from slbd.proto.server_model_pb2_grpc import ServerModelStub
 
 
 def init_connection(transport: Optional[str], server_address: str) -> Tuple[

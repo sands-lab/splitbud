@@ -2,13 +2,13 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import slwr.proto.server_model_pb2 as server__model__pb2
+import slbd.proto.server_model_pb2 as server__model__pb2
 
 
 class ServerModelStub(object):
     """compile with the following command:
-    python -m grpc_tools.protoc -I=proto/ --python_out=slwr/proto/ --pyi_out=slwr/proto/ --grpc_python_out=slwr/proto/ proto/server_model.proto
-    also update `slwr.proto.server_model_pb2` in `server_model_pb2_grpc.py`
+    python -m grpc_tools.protoc -I=proto/ --python_out=slbd/proto/ --pyi_out=slbd/proto/ --grpc_python_out=slbd/proto/ proto/server_model.proto
+    also update `slbd.proto.server_model_pb2` in `server_model_pb2_grpc.py`
 
     The server model service definition.
     """
@@ -33,8 +33,8 @@ class ServerModelStub(object):
 
 class ServerModelServicer(object):
     """compile with the following command:
-    python -m grpc_tools.protoc -I=proto/ --python_out=slwr/proto/ --pyi_out=slwr/proto/ --grpc_python_out=slwr/proto/ proto/server_model.proto
-    also update `slwr.proto.server_model_pb2` in `server_model_pb2_grpc.py`
+    python -m grpc_tools.protoc -I=proto/ --python_out=slbd/proto/ --pyi_out=slbd/proto/ --grpc_python_out=slbd/proto/ proto/server_model.proto
+    also update `slbd.proto.server_model_pb2` in `server_model_pb2_grpc.py`
 
     The server model service definition.
     """
@@ -77,8 +77,8 @@ def add_ServerModelServicer_to_server(servicer, server):
  # This class is part of an EXPERIMENTAL API.
 class ServerModel(object):
     """compile with the following command:
-    python -m grpc_tools.protoc -I=proto/ --python_out=slwr/proto/ --pyi_out=slwr/proto/ --grpc_python_out=slwr/proto/ proto/server_model.proto
-    also update `slwr.proto.server_model_pb2` in `server_model_pb2_grpc.py`
+    python -m grpc_tools.protoc -I=proto/ --python_out=slbd/proto/ --pyi_out=slbd/proto/ --grpc_python_out=slbd/proto/ proto/server_model.proto
+    also update `slbd.proto.server_model_pb2` in `server_model_pb2_grpc.py`
 
     The server model service definition.
     """

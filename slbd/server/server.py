@@ -19,10 +19,10 @@ from flwr.server.server import (
     Server as FlwrServer
 )
 
-from slwr.server.strategy import Strategy
-from slwr.server.server_model.manager.manager import ServerModelManager
-from slwr.common import ServerModelFitIns
-from slwr.common.constants import CLIENT_ID_CONFIG_KEY
+from slbd.server.strategy import Strategy
+from slbd.server.server_model.manager.manager import ServerModelManager
+from slbd.common import ServerModelFitIns
+from slbd.common.constants import CLIENT_ID_CONFIG_KEY
 
 
 class Server(FlwrServer):

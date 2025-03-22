@@ -10,9 +10,9 @@ from flwr.common import (
     Config,
 )
 
-from slwr.server.server_model.server_model import ServerModel
-from slwr.common.parameter import ndarray_dict_to_bytes, bytes_to_ndarray_dict
-from slwr.common import (
+from slbd.server.server_model.server_model import ServerModel
+from slbd.common.parameter import ndarray_dict_to_bytes, bytes_to_ndarray_dict
+from slbd.common import (
     ServerModelFitIns,
     ServerModelEvaluateIns,
     ControlCode,

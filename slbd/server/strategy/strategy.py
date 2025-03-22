@@ -4,13 +4,13 @@ from typing import Optional, List, Tuple, Dict, Callable
 from flwr.common import Parameters, Scalar
 from flwr.server.strategy import Strategy as FlwrStrategy
 
-from slwr.server.server_model.server_model import ServerModel
-from slwr.common import (
+from slbd.server.server_model.server_model import ServerModel
+from slbd.common import (
     ServerModelEvaluateIns,
     ServerModelFitIns,
     ServerModelFitRes,
 )
-from slwr.server.server_model.utils import ClientRequestGroup
+from slbd.server.server_model.utils import ClientRequestGroup
 
 
 class Strategy(FlwrStrategy):

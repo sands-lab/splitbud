@@ -1,6 +1,6 @@
 from flwr.client.client import Client as FlwrClient
 
-from slwr.server.server_model.proxy.server_model_proxy import ServerModelProxy
+from slbd.server.server_model.proxy.server_model_proxy import ServerModelProxy
 
 
 class Client(FlwrClient):

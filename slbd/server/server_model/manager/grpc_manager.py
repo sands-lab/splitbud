@@ -1,8 +1,8 @@
 from typing import Callable, List, Union
 
-from slwr.server.server_model.server_model import ServerModel
-from slwr.server.server_model.manager import ServerModelManager
-from slwr.common import ServerModelFitRes, ServerModelEvaluateIns, ServerModelFitIns
+from slbd.server.server_model.server_model import ServerModel
+from slbd.server.server_model.manager import ServerModelManager
+from slbd.common import ServerModelFitRes, ServerModelEvaluateIns, ServerModelFitIns
 
 
 class GrpcServerModelManager(ServerModelManager):

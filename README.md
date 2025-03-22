@@ -1,5 +1,15 @@
-# Slower
+# SplitBud
 
-Slower is a Split Learning extension built on top of [Flower](https://flower.ai/).
+SplitBud is a Split Learning framework built on top of [Flower](https://flower.ai/).
 
-See [this repository](https://github.com/BorisRado/slower_simple_examples) for a discussion and usage examples of the extension.
+For a detailed discussion of the framework, including its design and usage examples, please refer to the following paper. If you find the framework useful, consider citing the paper:
+
+```
+@article{Radovi-SplitBud,
+    author = "Radovič, Boris and Canini, Marco and Horváth, Samuel and Pejović, Veljko and Vepakomma, Praneeth",
+    maintitle = {EuroSys},
+    booktitle = {EuroMLSys},
+    title = "Towards a Unified Framework for Split Learning",
+    year = "2025",
+}
+```

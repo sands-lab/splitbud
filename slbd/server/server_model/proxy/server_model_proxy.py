@@ -7,13 +7,13 @@ try:
 except ImportError:
     torch = None
 
-from slwr.common import (
+from slbd.common import (
     ControlCode,
     BatchData,
     RequestType,
     RequestArgumentFormat,
 )
-from slwr.common.parameter import (
+from slbd.common.parameter import (
     ndarray_dict_to_bytes,
     bytes_to_ndarray_dict
 )

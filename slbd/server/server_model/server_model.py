@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 from flwr.common import NDArrays
 
-from slwr.common import (
+from slbd.common import (
     ServerModelFitIns,
     ServerModelEvaluateIns,
     ServerModelFitRes,

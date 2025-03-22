@@ -15,9 +15,9 @@ from flwr.common.message import Error
 from flwr.common.constant import ErrorCode
 from flwr.common.logger import log
 
-from slwr.client.client import Client
-from slwr.client.grpc.connection import init_connection
-from slwr.client.client_app import ClientApp
+from slbd.client.client import Client
+from slbd.client.grpc.connection import init_connection
+from slbd.client.client_app import ClientApp
 
 
 ClientFn = Callable[[str], Client]

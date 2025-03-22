@@ -18,13 +18,13 @@ from flwr.proto.transport_pb2_grpc import add_FlowerServiceServicer_to_server
 from flwr.server.client_manager import ClientManager, SimpleClientManager
 from flwr.server.superlink.fleet.grpc_bidi.grpc_server import valid_certificates
 
-from slwr.server.grpc.flower_servicer import FlowerServiceServicer
-from slwr.server.server_model.manager import ServerModelManager, GrpcServerModelManager
-from slwr.server.strategy import Strategy
-from slwr.server.grpc.servicer import ServerModelServicer
-from slwr.server.server import Server
-from slwr.common.utils import run_async
-from slwr.proto import server_model_pb2_grpc
+from slbd.server.grpc.flower_servicer import FlowerServiceServicer
+from slbd.server.server_model.manager import ServerModelManager, GrpcServerModelManager
+from slbd.server.strategy import Strategy
+from slbd.server.grpc.servicer import ServerModelServicer
+from slbd.server.server import Server
+from slbd.common.utils import run_async
+from slbd.proto import server_model_pb2_grpc
 
 
 ADDRESS_DRIVER_API = "0.0.0.0:9091"
@@ -105,8 +105,8 @@ async def start_grpc_server(  # pylint: disable=too-many-arguments
     else:
         server.add_insecure_port(server_address)
 
-    slwr_servicer = ServerModelServicer(server_model_manager)
-    server_model_pb2_grpc.add_ServerModelServicer_to_server(slwr_servicer, server)
+    slbd_servicer = ServerModelServicer(server_model_manager)
+    server_model_pb2_grpc.add_ServerModelServicer_to_server(slbd_servicer, server)
 
     flwr_servicer = FlowerServiceServicer(client_manager)
     add_FlowerServiceServicer_to_server(flwr_servicer, server)

@@ -19,14 +19,14 @@ from flwr.server.client_manager import ClientManager
 from flwr.server.strategy.aggregate import aggregate, weighted_loss_avg
 from flwr.server.client_proxy import ClientProxy
 
-from slwr.server.server_model.server_model import ServerModel
-from slwr.common import (
+from slbd.server.server_model.server_model import ServerModel
+from slbd.common import (
     ServerModelEvaluateIns,
     ServerModelFitIns,
     ServerModelFitRes,
 )
-from slwr.server.strategy import Strategy
-from slwr.server.server_model.utils import ClientRequestGroup
+from slbd.server.strategy import Strategy
+from slbd.server.server_model.utils import ClientRequestGroup
 
 
 class PlainSlStrategy(Strategy):

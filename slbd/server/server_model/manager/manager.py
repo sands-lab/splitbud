@@ -1,8 +1,8 @@
 from typing import List, Union
 from abc import ABC, abstractmethod
 
-from slwr.server.server_model.proxy.server_model_proxy import ServerModelProxy
-from slwr.common import ServerModelFitRes, ServerModelEvaluateIns, ServerModelFitIns
+from slbd.server.server_model.proxy.server_model_proxy import ServerModelProxy
+from slbd.common import ServerModelFitRes, ServerModelEvaluateIns, ServerModelFitIns
 
 
 class ServerModelManager(ABC):

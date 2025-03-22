@@ -4,17 +4,17 @@ from logging import DEBUG
 
 from flwr.common import log
 
-from slwr.common import BatchData
-from slwr.common.serde import (
+from slbd.common import BatchData
+from slbd.common.serde import (
     control_code_to_proto,
     control_code_from_proto,
     from_grpc_format,
     to_grpc_format,
     ControlCode,
 )
-from slwr.server.server_model.proxy.server_model_proxy import ServerModelProxy
-from slwr.proto import server_model_pb2_grpc
-from slwr.proto import server_model_pb2
+from slbd.server.server_model.proxy.server_model_proxy import ServerModelProxy
+from slbd.proto import server_model_pb2_grpc
+from slbd.proto import server_model_pb2
 
 
 class ClientException(Exception):

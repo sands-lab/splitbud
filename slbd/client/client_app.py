@@ -4,8 +4,8 @@ from flwr.client.mod.utils import make_ffn
 from flwr.client.typing import ClientFn, Mod
 from flwr.common import Context, Message
 
-from slwr.proto.server_model_pb2_grpc import ServerModelStub
-from slwr.client.grpc.message_handler import handle_legacy_message_from_msgtype
+from slbd.proto.server_model_pb2_grpc import ServerModelStub
+from slbd.client.grpc.message_handler import handle_legacy_message_from_msgtype
 
 
 class ClientAppException(Exception):
